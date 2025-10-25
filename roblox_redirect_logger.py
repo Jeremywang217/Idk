@@ -102,7 +102,6 @@ def index():
       <body style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial; padding:36px;">
         <p>Click the link below to continue:</p>
         <p><a href="{escape(href)}">{escape(DEFAULT_TARGET)}</a></p>
-        <p style="font-size:0.9em; color:#666;">Your public IP will be displayed before redirecting.</p>
       </body>
     </html>
     """
@@ -184,4 +183,5 @@ if __name__ == "__main__":
     port = int(os.environ.get("PORT", 3000))
     print(f"Server running publicly on 0.0.0.0:{port} ...")
     app.run(host="0.0.0.0", port=port, debug=False)
+
 
